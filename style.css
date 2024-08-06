@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 50px;
+  font-weight: normal;
+}
+
+.faq-box {
+ background: #fff;
+ padding: 16px;
+ border-radius: 5px;
+ margin-bottom: 15px;
+ box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+ width: 90vw;
+ max-width: 540px;
+ position: relative;
+ cursor: pointer;
+ overflow: hidden;
+ transition: height linear .2s;
+}
+
+.faq-box.active {
+  max-height: 300px;
+}
+
+.faq-question {
+  margin: 0;
+  max-width: 80%;
+}
+
+.faq-answer {
+  color: #111;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.17em;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.colapse {
+  display: none;
+}
+
+.faq-box.active .colapse {
+  display: block;
+}
+
+.faq-box.active .expand {
+  display: none;
+}
